@@ -1,0 +1,41 @@
+.custom-navbar {
+    background-color: #061638;
+}
+
+.navbar.custom-navbar .navbar-brand,
+.navbar.custom-navbar .nav-link {
+   font-family: 'Koulen', sans-serif;
+   font-size: 25px;
+   
+}
+
+
+
+
+.phraseWG{
+    font-family: "Happy Monkey", sans-serif;
+    font-size: 90px;
+}
+
+.custom-motto {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.custom-lowerBlue{
+    background-color: #1E4AA8;
+}
+
+
+
+/* BUTTON FOR DELIVERY AND PRODUCTS */
+.hpBtn{
+    margin-top: 15px;
+    margin-inline: 15px;
+    font-family: 'Koulen', sans-serif;
+    font-size: 40px;
+    padding: 25px;
+    border-radius: 51px;
+    background-color: #061638;
+    color: white;
+}
