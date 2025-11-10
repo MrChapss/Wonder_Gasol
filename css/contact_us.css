@@ -1,0 +1,11 @@
+/* NAV BAR CSS */
+.custom-navbar {
+    background-color: #061638;
+}
+
+.navbar.custom-navbar .navbar-brand,
+.navbar.custom-navbar .nav-link {
+   font-family: 'Koulen', sans-serif;
+   font-size: 25px;
+   
+}

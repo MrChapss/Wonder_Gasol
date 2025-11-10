@@ -44,6 +44,7 @@
     font-size: 90px;
     color: white;
     padding: 20px;
+    margin-bottom: 0;
 }
 
 .custom-StepsText {
@@ -55,3 +56,14 @@
     font-size: 40px;
     color: #4DEDF3;
 }
+
+/* FOOTER */
+.custom-footer {
+    background-color: #061638;
+    color: white;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    padding: 10px;
+    margin-bottom: 0;
+}
+

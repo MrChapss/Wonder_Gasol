@@ -1,0 +1,44 @@
+/* NAV BAR CSS */
+.custom-navbar {
+    background-color: #061638;
+}
+
+.navbar.custom-navbar .navbar-brand,
+.navbar.custom-navbar .nav-link {
+   font-family: 'Koulen', sans-serif;
+   font-size: 25px;
+   
+}
+
+.whoWeR {
+    font-family: 'Koulen', sans-serif;
+    font-size: 120px;
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.historyWG {
+    font-family: 'Koulen', sans-serif;
+    font-size: 65px;
+    color: black;
+    text-align: center;
+}
+
+.historyText {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+}
+
+.WGFactory {
+    margin-top: 20px;
+    border: solid black 1px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+.custom-VM {
+    background-color: #1E4AA8;
+}
