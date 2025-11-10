@@ -9,3 +9,24 @@
    font-size: 25px;
    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR FOOTER */
+.custom-footer {
+    background-color: #061638;
+    color: white;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    padding: 10px;
+    margin-bottom: 0;
+}

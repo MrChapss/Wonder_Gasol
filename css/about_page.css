@@ -10,21 +10,24 @@
    
 }
 
+/* WHO WE ARE */
 .whoWeR {
     font-family: 'Koulen', sans-serif;
-    font-size: 120px;
-    color: black;
-    margin-top: 100px;
+    font-size: 150px;
+    color: #061638;
+    margin-top: 140px;
     margin-bottom: 10px;
 }
 
+/* OUR COMPANY & THE WONDER GASOL STORY */
 .historyWG {
     font-family: 'Koulen', sans-serif;
     font-size: 65px;
-    color: black;
+    color: #1E4AA8;
     text-align: center;
 }
 
+/* OUR COMPANY & THE WONDER GASOL STORY PARAGRAPH TEXT */
 .historyText {
     font-family: 'Inter', sans-serif;
     font-size: 25px;
@@ -32,13 +35,40 @@
     text-align: justify;
 }
 
+/* IMAGE OF WONDER GASOL FACTORY AND DELIVERING LPG */
 .WGFactory {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     border: solid black 1px;
     border-radius: 3px;
-    margin-bottom: 50px;
 }
 
-.custom-VM {
-    background-color: #1E4AA8;
+/* VISION & MISSION */
+.custom-Vision {
+    font-family: 'Koulen';
+    color: #1E4AA8 ;
+    font-size: 64px;
+}
+
+.custom-Mission {
+    font-family: 'Koulen';
+    color: #1E4AA8;
+    font-size: 64px;
+}
+
+.VM-text {
+    font-family: 'Inter';
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+/* FOR FOOTER */
+.custom-footer {
+    background-color: #061638;
+    color: white;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    padding: 10px;
+    margin-bottom: 0;
 }
