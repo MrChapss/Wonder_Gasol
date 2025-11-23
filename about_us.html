@@ -3,110 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonder Gasol</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="css/about_page.css" rel="stylesheet">
-
-    <!--LINK FOR INTER/KOULEN/HAPPY MONKEY-->
+    <title>About Us - Wonder Gasol</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!--NAV BAR-->
-        <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark custom-navbar">
-                <div class="container-fluid">
-                     <a class="navbar-brand" href="home_page.html">
-                        <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" width="150" height="60">
-                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav  ms-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="home_page.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about_us.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="product.html">Product</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- Navigation -->
+    <nav class="navbar-minimal">
+        <div class="navbar-container">
+            <a href="home_page.html">
+                <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" class="navbar-logo">
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="home_page.html" class="navbar-link">Home</a></li>
+                <li><a href="product.html" class="navbar-link">Products</a></li>
+                <li><a href="about_us.html" class="navbar-link active">About</a></li>
+                <li><a href="cart.html" class="navbar-link cart-badge">
+                    Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="section" style="padding-top: var(--space-16);">
+        <div class="container text-center">
+            <h1 class="mb-6">About Wonder Gasol</h1>
+            <p class="hero-subtitle">Trusted LPG delivery service serving Quezon City since 2020</p>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--space-12);">
+                <div class="card">
+                    <h3 class="card-title">Our Company</h3>
+                    <p class="card-text">Wonder Gasol is a Filipino home-grown company focused on delivery and providing quality, trusted gas cooking products to the whole Quezon City region.</p>
                 </div>
-            </nav>
-        </header>
-    <!--MAIN CONTENT / MAIN-->
-        <main>
-        <!--FOR WHO WE ARE, BACKGROUND HISTORY OF WONDER GASOL, IMAGE OF FACTORY WG-->
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-12">
-                        <p class="whoWeR">WHO WE ARE</p>
-                    </div>
-                </div>
-                <div class="row align-items-center ms-auto">
-                    <div class="col-12 col-md-6">
-                        <p class="historyWG">OUR COMPANY</p>
-                        <p class="historyText">Wonder Gasol is a Filipino home brewed Company 
-                            focused on delivery and providing quality trusted gas cooking 
-                            products to the whole Q.C region.<br><br><br></p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <p class="historyWG">THE WONDER GASOL STORY</p>
-                        <p class="historyText">The Wonder Gasol company has continued 
-                        to focus its goal to provide all Q.C. citizens and business
-                        owners for their own use.  Starting in 2020 the goal was to
-                        expand business in the whole Q.C. region and provide them with 
-                        quality and fairly priced gas products.</p>
-                    </div>
-                    <div class="col-12 col-md-12">
-                        <img class="img-fluid WGFactory" src="images/WGFactory.png" alt="Wonder Gasol Factory">
-                    </div>
-                </div>
-            </div>
-        <!--FOR MISSION AND VISION-->
-            <div class="container text-center">
-                <div class="row align-items-center ms-auto">
-                    <div class="col-12 col-md-6">
-                        <p class="custom-Mission">Mission</p>  
-                        <p class="VM-text">To deliver quality, and affordable gas to the 
-                        Q.C. community and its population.<br><br></p>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <p class="custom-Vision">VISION</p>
-                        <p class="VM-text">To be the no. 1 trusted and picked 
-                        gas delivery business in the whole 
-                        Q.C. region and be know to provide
-                        affordable best quality gas.</p>
-                    </div>
-                </div>
-            </div>
-        <!--IMAGE DELIVERING WONDER GASOL TO CUSTOMER-->
-            <div class="container text-center">
-            <div class="row align-items-center ms-auto custom-VM">
-                <div class="col-12 col-md-12">
-                    <img class="img-fluid WGFactory" src="images/deliveringLPG.png" alt="Wonder Gasol is delivering LPG">
-                </div>
-            
-            </div>
-        </main>
-    <!--FOOTER-->
-        <footer>
-            <div class="container-fluid text-center">
-            <div class="row align-items-center custom-footer">
-                <div class="col-12 col-md-12">
-                    <p class="custom-footer">© 2025 Wonder Gasol. All rights reserved.</p>
+                <div class="card">
+                    <h3 class="card-title">Our Story</h3>
+                    <p class="card-text">Starting in 2020, our goal has been to expand business throughout the Quezon City region and provide citizens and business owners with quality and fairly priced gas products.</p>
                 </div>
             </div>
         </div>
-        </footer>
+    </section>
 
+    <!-- Factory Image -->
+    <section class="section" style="background-color: var(--bg-light); padding: var(--space-12) 0;">
+        <div class="container">
+            <img src="images/WGFactory.png" alt="Wonder Gasol Factory" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    <!-- Mission & Vision -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--space-12);">
+                <div style="text-align: center; padding: var(--space-8);">
+                    <h2 style="color: var(--accent-primary); margin-bottom: var(--space-4);">Mission</h2>
+                    <p class="text-muted">To deliver quality and affordable gas to the Quezon City community and its population.</p>
+                </div>
+                <div style="text-align: center; padding: var(--space-8);">
+                    <h2 style="color: var(--accent-primary); margin-bottom: var(--space-4);">Vision</h2>
+                    <p class="text-muted">To be the #1 trusted and preferred gas delivery business in the whole Quezon City region, known for providing affordable, best-quality gas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Image -->
+    <section class="section" style="padding-bottom: var(--space-16);">
+        <div class="container">
+            <img src="images/deliveringLPG.png" alt="Wonder Gasol Delivery" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Wonder Gasol. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
