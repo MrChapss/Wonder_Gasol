@@ -91,8 +91,15 @@ function openProductModal(productId) {
     document.getElementById('modalProductPrice').textContent = `₱${currentProduct.price.toLocaleString()}`;
     document.getElementById('modalProductDescription').textContent = currentProduct.description;
     document.getElementById('modalProductAvailability').textContent = currentProduct.availability;
-    document.getElementById('modalDeliveryEta').textContent = currentProduct.deliveryEta;
+    document.getElementById('modalDeliveryEta').textContent = currentProduct.delivery_eta || currentProduct.deliveryEta;
     document.getElementById('quantityInput').value = 1;
+    
+    // Set product ID in form
+    const modalProductId = document.getElementById('modalProductId');
+    if (modalProductId) {
+        modalProductId.value = currentProduct.id;
+    }
+    
     document.getElementById('productModal').style.display = 'block';
 }
 

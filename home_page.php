@@ -1,0 +1,125 @@
+<?php
+/**
+ * Home Page
+ * Main landing page for Wonder Gasol
+ */
+require_once 'config/session.php';
+$cartCount = getCartCount();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Gasol - Quality LPG Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-minimal">
+        <div class="navbar-container">
+            <a href="home_page.php">
+                <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" class="navbar-logo">
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="home_page.php" class="navbar-link active">Home</a></li>
+                <li><a href="product.php" class="navbar-link">Products</a></li>
+                <li><a href="about_us.php" class="navbar-link">About</a></li>
+                <li><a href="cart.php" class="navbar-link cart-badge">
+                    Cart
+                    <span class="cart-count" id="cartCount"><?php echo $cartCount; ?></span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Quality LPG Delivered to Your Door</h1>
+            <p class="hero-subtitle">Fast, reliable, and affordable gas delivery for homes and businesses across Quezon City</p>
+            <a href="product.php" class="btn btn-primary btn-lg">Order Gasul Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-8">Our Products</h2>
+            <div class="grid grid-3">
+                <div class="product-card">
+                    <img src="images/lpg.png" alt="11kg LPG Tank" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">11kg LPG Tank</h3>
+                        <p class="product-price">₱850</p>
+                        <p class="product-availability in-stock">In Stock</p>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/lpg.png" alt="22kg LPG Tank" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">22kg LPG Tank</h3>
+                        <p class="product-price">₱1,600</p>
+                        <p class="product-availability in-stock">In Stock</p>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/lpg.png" alt="50kg LPG Tank" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">50kg LPG Tank</h3>
+                        <p class="product-price">₱3,500</p>
+                        <p class="product-availability in-stock">In Stock</p>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="steps">
+        <div class="container">
+            <h2 class="text-center mb-8">How It Works</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Browse Products</h3>
+                    <p class="step-description">Choose from our range of quality LPG tanks</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Place Your Order</h3>
+                    <p class="step-description">Add to cart and provide delivery details</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Fast Delivery</h3>
+                    <p class="step-description">Track your order until it arrives at your door</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container text-center">
+            <h2 class="mb-4">Need Help?</h2>
+            <p class="text-muted mb-6">Contact us for orders or inquiries</p>
+            <p style="font-size: 1.5rem; font-weight: 600; color: var(--accent-primary);">+63 912 345 6789</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Wonder Gasol. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
