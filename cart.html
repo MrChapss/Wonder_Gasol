@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Wonder Gasol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-minimal">
+        <div class="navbar-container">
+            <a href="home_page.html">
+                <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" class="navbar-logo">
+            </a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="home_page.html" class="navbar-link">Home</a></li>
+                <li><a href="product.html" class="navbar-link">Products</a></li>
+                <li><a href="about_us.html" class="navbar-link">About</a></li>
+                <li><a href="cart.html" class="navbar-link cart-badge active">
+                    Cart
+                    <span class="cart-count" id="cartCount">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="section" style="padding-top: var(--space-16); min-height: 60vh;">
+        <div class="container">
+            <h1 class="mb-8">Shopping Cart</h1>
+            
+            <div id="emptyCart" style="text-align: center; padding: var(--space-16) 0;">
+                <p class="text-muted" style="font-size: 1.2rem;">Your cart is empty</p>
+                <a href="product.html" class="btn btn-primary mt-6">Browse Products</a>
+            </div>
+
+            <div id="cartContent" style="display: none;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-8);">
+                    <div>
+                        <div id="cartItems"></div>
+                    </div>
+                    <div>
+                        <div class="card">
+                            <h3 class="card-title">Order Summary</h3>
+                            <div style="margin-bottom: var(--space-4);">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span class="text-muted">Subtotal:</span>
+                                    <span id="subtotal">₱0</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-2);">
+                                    <span class="text-muted">Delivery Fee:</span>
+                                    <span id="deliveryFee">₱50</span>
+                                </div>
+                                <hr>
+                                <div style="display: flex; justify-content: space-between; font-size: 1.25rem; font-weight: 700;">
+                                    <span>Total:</span>
+                                    <span id="total" style="color: var(--accent-primary);">₱0</span>
+                                </div>
+                            </div>
+                            <a href="checkout.html" class="btn btn-primary btn-lg" style="width: 100%;">Proceed to Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Wonder Gasol. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

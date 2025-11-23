@@ -1,3 +1,11 @@
+<?php
+/**
+ * Home Page
+ * Main landing page for Wonder Gasol
+ */
+require_once 'config/session.php';
+$cartCount = getCartCount();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +21,17 @@
     <!-- Navigation -->
     <nav class="navbar-minimal">
         <div class="navbar-container">
-            <a href="home_page.html">
+            <a href="home_page.php">
                 <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" class="navbar-logo">
             </a>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
             <ul class="navbar-menu" id="navbarMenu">
-                <li><a href="home_page.html" class="navbar-link active">Home</a></li>
-                <li><a href="product.html" class="navbar-link">Products</a></li>
-                <li><a href="about_us.html" class="navbar-link">About</a></li>
-                <li><a href="cart.html" class="navbar-link cart-badge">
+                <li><a href="home_page.php" class="navbar-link active">Home</a></li>
+                <li><a href="product.php" class="navbar-link">Products</a></li>
+                <li><a href="about_us.php" class="navbar-link">About</a></li>
+                <li><a href="cart.php" class="navbar-link cart-badge">
                     Cart
-                    <span class="cart-count" id="cartCount">0</span>
+                    <span class="cart-count" id="cartCount"><?php echo $cartCount; ?></span>
                 </a></li>
             </ul>
         </div>
@@ -33,7 +41,7 @@
         <div class="container">
             <h1 class="hero-title">Quality LPG Delivered to Your Door</h1>
             <p class="hero-subtitle">Fast, reliable, and affordable gas delivery for homes and businesses across Quezon City</p>
-            <a href="product.html" class="btn btn-primary btn-lg">Order Gasul Now</a>
+            <a href="product.php" class="btn btn-primary btn-lg">Order Gasul Now</a>
         </div>
     </section>
 
@@ -48,7 +56,7 @@
                         <h3 class="product-name">11kg LPG Tank</h3>
                         <p class="product-price">₱850</p>
                         <p class="product-availability in-stock">In Stock</p>
-                        <a href="product.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -57,7 +65,7 @@
                         <h3 class="product-name">22kg LPG Tank</h3>
                         <p class="product-price">₱1,600</p>
                         <p class="product-availability in-stock">In Stock</p>
-                        <a href="product.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
                     </div>
                 </div>
                 <div class="product-card">
@@ -66,7 +74,7 @@
                         <h3 class="product-name">50kg LPG Tank</h3>
                         <p class="product-price">₱3,500</p>
                         <p class="product-availability in-stock">In Stock</p>
-                        <a href="product.html" class="btn btn-primary" style="width: 100%;">View Details</a>
+                        <a href="product.php" class="btn btn-primary" style="width: 100%;">View Details</a>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,11 @@
+<?php
+/**
+ * About Us Page
+ * Information about Wonder Gasol company
+ */
+require_once 'config/session.php';
+$cartCount = getCartCount();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +21,17 @@
     <!-- Navigation -->
     <nav class="navbar-minimal">
         <div class="navbar-container">
-            <a href="home_page.html">
+            <a href="home_page.php">
                 <img src="images/WonderGasolLOGO.png" alt="Wonder Gasol" class="navbar-logo">
             </a>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
             <ul class="navbar-menu" id="navbarMenu">
-                <li><a href="home_page.html" class="navbar-link">Home</a></li>
-                <li><a href="product.html" class="navbar-link">Products</a></li>
-                <li><a href="about_us.html" class="navbar-link active">About</a></li>
-                <li><a href="cart.html" class="navbar-link cart-badge">
+                <li><a href="home_page.php" class="navbar-link">Home</a></li>
+                <li><a href="product.php" class="navbar-link">Products</a></li>
+                <li><a href="about_us.php" class="navbar-link active">About</a></li>
+                <li><a href="cart.php" class="navbar-link cart-badge">
                     Cart
-                    <span class="cart-count" id="cartCount">0</span>
+                    <span class="cart-count" id="cartCount"><?php echo $cartCount; ?></span>
                 </a></li>
             </ul>
         </div>
